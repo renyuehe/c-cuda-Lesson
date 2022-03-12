@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1738
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cuda_Demos", "cuda_Demos\cuda_Demos.vcxproj", "{1BB0763F-003C-408A-8CF4-679BD27832BC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_hello_cuda", "01_hello_cuda\01_hello_cuda.vcxproj", "{1EE0EFF2-C88B-42BF-88C4-3AE95F7BFE30}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_Index_of_thread", "02_Index_of_thread\02_Index_of_thread.vcxproj", "{325A0A5A-49F3-44B0-BA84-046ABFB05D15}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_Index_of_thread_Synchronize", "02_Index_of_thread_Synchronize\02_Index_of_thread_Synchronize.vcxproj", "{3D82122D-A788-498C-B20E-7B3F77ACF553}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_vector_add_gpu", "03_vector_add\03_vector_add.vcxproj", "{561C923E-676F-4B3B-89C3-81F822478A8B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_vector_add_cpu", "03_vector_add_cpu\03_vector_add_cpu.vcxproj", "{DCD00B37-4481-4C8D-9A64-9E873B79C03C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_Index_way", "04_Index_way\04_Index_way.vcxproj", "{16429E1C-750B-44AA-9A35-933795B35772}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BB0763F-003C-408A-8CF4-679BD27832BC}.Debug|x64.ActiveCfg = Debug|x64
+		{1BB0763F-003C-408A-8CF4-679BD27832BC}.Debug|x64.Build.0 = Debug|x64
+		{1BB0763F-003C-408A-8CF4-679BD27832BC}.Release|x64.ActiveCfg = Release|x64
+		{1BB0763F-003C-408A-8CF4-679BD27832BC}.Release|x64.Build.0 = Release|x64
+		{1EE0EFF2-C88B-42BF-88C4-3AE95F7BFE30}.Debug|x64.ActiveCfg = Debug|x64
+		{1EE0EFF2-C88B-42BF-88C4-3AE95F7BFE30}.Debug|x64.Build.0 = Debug|x64
+		{1EE0EFF2-C88B-42BF-88C4-3AE95F7BFE30}.Release|x64.ActiveCfg = Release|x64
+		{1EE0EFF2-C88B-42BF-88C4-3AE95F7BFE30}.Release|x64.Build.0 = Release|x64
+		{325A0A5A-49F3-44B0-BA84-046ABFB05D15}.Debug|x64.ActiveCfg = Debug|x64
+		{325A0A5A-49F3-44B0-BA84-046ABFB05D15}.Debug|x64.Build.0 = Debug|x64
+		{325A0A5A-49F3-44B0-BA84-046ABFB05D15}.Release|x64.ActiveCfg = Release|x64
+		{325A0A5A-49F3-44B0-BA84-046ABFB05D15}.Release|x64.Build.0 = Release|x64
+		{3D82122D-A788-498C-B20E-7B3F77ACF553}.Debug|x64.ActiveCfg = Debug|x64
+		{3D82122D-A788-498C-B20E-7B3F77ACF553}.Debug|x64.Build.0 = Debug|x64
+		{3D82122D-A788-498C-B20E-7B3F77ACF553}.Release|x64.ActiveCfg = Release|x64
+		{3D82122D-A788-498C-B20E-7B3F77ACF553}.Release|x64.Build.0 = Release|x64
+		{561C923E-676F-4B3B-89C3-81F822478A8B}.Debug|x64.ActiveCfg = Debug|x64
+		{561C923E-676F-4B3B-89C3-81F822478A8B}.Debug|x64.Build.0 = Debug|x64
+		{561C923E-676F-4B3B-89C3-81F822478A8B}.Release|x64.ActiveCfg = Release|x64
+		{561C923E-676F-4B3B-89C3-81F822478A8B}.Release|x64.Build.0 = Release|x64
+		{DCD00B37-4481-4C8D-9A64-9E873B79C03C}.Debug|x64.ActiveCfg = Debug|x64
+		{DCD00B37-4481-4C8D-9A64-9E873B79C03C}.Debug|x64.Build.0 = Debug|x64
+		{DCD00B37-4481-4C8D-9A64-9E873B79C03C}.Release|x64.ActiveCfg = Release|x64
+		{DCD00B37-4481-4C8D-9A64-9E873B79C03C}.Release|x64.Build.0 = Release|x64
+		{16429E1C-750B-44AA-9A35-933795B35772}.Debug|x64.ActiveCfg = Debug|x64
+		{16429E1C-750B-44AA-9A35-933795B35772}.Debug|x64.Build.0 = Debug|x64
+		{16429E1C-750B-44AA-9A35-933795B35772}.Release|x64.ActiveCfg = Release|x64
+		{16429E1C-750B-44AA-9A35-933795B35772}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F95A645-CDF5-441F-90A4-77371266C4E3}
+	EndGlobalSection
+EndGlobal
