@@ -6,6 +6,7 @@
 
 void __global__ add(const double *x, const double *y, double *z, int count)
 {
+	//block-thread 1D-1D
 	const int n = blockDim.x * blockIdx.x + threadIdx.x;
 	if (n < count)
 	{
@@ -50,8 +51,9 @@ int main(void)
 	cudaMemcpy(d_y, h_y, M, cudaMemcpyHostToDevice);
 
 	const int block_size = 128;
-	const int grid_size = (N + block_size - 1) / block_size;
-	add << <grid_size, block_size >> > (d_x, d_y, d_z, N);
+	const int block_num = (N + block_size - 1) / block_size;
+	
+	add << <block_num, block_size >> > (d_x, d_y, d_z, N);
 
 	cudaMemcpy(h_z, d_z, M, cudaMemcpyDeviceToHost);
 	check(h_z, N);
